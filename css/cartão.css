@@ -1,30 +1,25 @@
-.titulo-poke{
-    border-bottom: 1px solid;
-}
-
 .cartao-poke{
     background-color: #77c850;
     width: 75%;
     border-radius: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-   
+    margin-bottom: .5rem;
 }
-
 .num-poke{
     text-align: right;
     grid-column-end: span 2;
-    padding: .5rem 1rem 0 0;
     font-size: .700rem;
+    padding: .700rem 1rem 0 0;
+    color: rgb(192, 192, 192);
 }
 .nome-poke{
     grid-column-end: span 2;
     text-align: left;
-    padding: 0 0 0 .5rem;
+    padding: 0 0 .5rem 1rem;
     font-size: 1rem;
     color: #fff;
 }
-
 .tipo{
     display: flex;
     flex-direction: column;
@@ -32,13 +27,30 @@
     color: #fff;
 }
 .tipo-poke{
-    background-color:#a040a0;
     border-radius: 2rem;
     margin: .1rem 1rem;
     font-size: .700rem;
     padding: .5rem;
 }
+.tipo01{
+    background-color:#a040a0;
+}
+.tipo-poke-02{
+    background-color:#77c850;
+}
+
 .img-poke{    
     width: 100%;
     padding: .5rem;    
+}
+
+
+/*layout tablet*/
+@media screen and (min-width: 425px) {
+
+   .cartao-poke{
+    width: 90%;
+    margin: .5rem auto;
+   }
+
 }
