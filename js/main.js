@@ -1,4 +1,6 @@
 // "https://pokeapi.co/api/v2/pokemon/?offset=20&limit=20"
+// path = pokemon/1 = arquivo
+// query string = 'codigo' de busca
 
 
 const offset = 0;
