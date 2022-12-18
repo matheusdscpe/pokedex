@@ -1,5 +1,3 @@
-
-
 function convertElementsPoke(pokemon){
     return `
     <div class="cartao-poke">
@@ -18,9 +16,4 @@ function convertElementsPoke(pokemon){
 
 const card = document.querySelector('#baseLayout')
 
-
-pokeApi.getpokemons().then((pokemonList)=> {
-        for (let i = 0; i < pokemonList.length; i++) {
-            const pokemon = pokemonList[i];
-            card.innerHTML += convertElementsPoke(pokemon)};
-    })
+pokeApi.getpokemons().then((pokemons=[])=>card.innerHTML+=pokemons.map(convertElementsPoke).join(""))
