@@ -1,7 +1,7 @@
 
 function convertElementsPoke(pokemon){
     return `
-    <div class="cartao-poke ${pokemon.type}">
+    <li class="cartao-poke ${pokemon.type}">
         <span class="num-poke">#${pokemon.number}</span>
         <span class="nome-poke">${pokemon.name}</span>
         <ol class="tipo">
@@ -10,7 +10,7 @@ function convertElementsPoke(pokemon){
         <img class="img-poke"
             src="${pokemon.sprite}"
             alt="${pokemon.name}">
-    </div>
+    </li>
     `
 }
 
