@@ -1,14 +1,14 @@
+
 function convertElementsPoke(pokemon){
     return `
-    <div class="cartao-poke">
-        <p class="num-poke">#001</p>
-        <h2 class="nome-poke">${pokemon.name}</h2>
+    <div class="cartao-poke ${pokemon.type}">
+        <span class="num-poke">#${pokemon.number}</span>
+        <span class="nome-poke">${pokemon.name}</span>
         <ol class="tipo">
-            <li class="tipo1 tipo-poke">planta</li>
-            <li class="tipo-poke tipo2">veneno</li>
+            ${pokemon.types.map((type)=>`<li class="tipo1 tipo-poke">${type}</li>`).join('')}
         </ol>
         <img class="img-poke"
-            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
+            src="${pokemon.sprite}"
             alt="${pokemon.name}">
     </div>
     `

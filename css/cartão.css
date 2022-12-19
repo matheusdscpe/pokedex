@@ -11,7 +11,7 @@
     grid-column-end: span 2;
     font-size: .700rem;
     padding: .700rem 1rem 0 0;
-    color: rgb(192, 192, 192);
+    color: rgba(247, 247, 247, 0.664);
 }
 .nome-poke{
     grid-column-end: span 2;
@@ -31,6 +31,7 @@
     margin: .1rem 1rem;
     font-size: .700rem;
     padding: .5rem;
+    background-color: rgba(48, 48, 48, 0.151);
 }
 .tipo01{
     background-color:#a040a0;
