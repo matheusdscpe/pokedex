@@ -1,3 +1,7 @@
+const card = document.querySelector('#baseLayout')
+const btnAddPoke = document.querySelector('#addPoke')
+const limit = 5;
+let offset = 0;
 
 function convertElementsPoke(pokemon){
     return `
@@ -14,6 +18,17 @@ function convertElementsPoke(pokemon){
     `
 }
 
-const card = document.querySelector('#baseLayout')
+function addPoke(offset, limit){
+    
+    
+    pokeApi.getpokemons(offset, limit).then((pokemons=[])=>{
+        card.innerHTML+=pokemons.map(convertElementsPoke).join("")})
 
-pokeApi.getpokemons().then((pokemons=[])=>card.innerHTML+=pokemons.map(convertElementsPoke).join(""))
+}
+
+addPoke(offset, limit)
+
+btnAddPoke.addEventListener('click', ()=>{
+    offset += limit;
+    addPoke(offset, limit);
+});
