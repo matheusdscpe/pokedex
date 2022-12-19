@@ -3,9 +3,9 @@ function convertElementsPoke(pokemon){
     return `
     <div class="cartao-poke ${pokemon.type}">
         <span class="num-poke">#${pokemon.number}</span>
-        <span class="nome-poke">${pokemon.name}</span>
+        <span class="nome-poke">${pokemon.name.toUpperCase()}</span>
         <ol class="tipo">
-            ${pokemon.types.map((type)=>`<li class="tipo1 tipo-poke">${type}</li>`).join('')}
+            ${pokemon.types.map((type)=>`<li class="tipo-poke ${type}">${type}</li>`).join('')}
         </ol>
         <img class="img-poke"
             src="${pokemon.sprite}"

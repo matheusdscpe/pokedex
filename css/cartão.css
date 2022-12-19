@@ -1,5 +1,5 @@
 .cartao-poke{
-    background-color: rgb(28, 202, 115);
+    background-color: #78c850;
     width: 75%;
     border-radius: 2rem;
     display: grid;
@@ -31,13 +31,7 @@
     margin: .1rem 1rem;
     font-size: .700rem;
     padding: .5rem;
-    background-color: rgba(48, 48, 48, 0.151);
-}
-.tipo01{
-    background-color:#a040a0;
-}
-.tipo-poke-02{
-    background-color:#77c850;
+    filter: brightness(1.1);
 }
 
 .img-poke{    
