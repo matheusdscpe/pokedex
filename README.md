@@ -5,7 +5,7 @@
 
 ## Projeto
 
-Plataforma desenvolvida para realizar listagem dos pokemons te todas as gerações, entregando os cards com o nome, tipo e numero de cada pokemon.
+Plataforma desenvolvida para realizar listagem dos pokemons de todas as gerações, entregando os cards com o nome, tipo e numero de cada pokemon.
 
 ## Tecnologias
 
