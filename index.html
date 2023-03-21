@@ -12,26 +12,36 @@
 
 <body>
 
-    <h1 class="titulo-poke">POKEDEX</h1>
+    <div class="animacao">
+        <img src="assets/images/pokebola1.png" alt="imagem de uma pokebola" class="pokebolaInicial">
+    </div>
 
-    <ol class="base-layout" id="baseLayout">
-        <li class="cartao-poke" id="cardPoke" style="display: none;">
-            <span class="num-poke">#001</span>
-            <span class="nome-poke">Bulbasaur</span>
-            <ol class="tipo">
-                <li class="tipo-poke">planta</li>
-                <li class="tipo-poke">veneno</li>
-            </ol>
-            <img class="img-poke"
-                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
-                alt="Bulbasaur">
-        </li>
-    </ol>
-    <button class="addPoke" id="addPoke">+</button>
+    <section class="principal">
 
-    <script src="assets/js/poke-model.js"></script>
-    <script src="assets/js/pokeApi.js"></script>
-    <script src="assets/js/main.js"></script>
+
+
+
+        <div class="imagemLogo">
+            <img src="assets/images/logoPokedex.png" alt="" class="logoUm">
+            <img src="assets/images/logoPokemon.png" alt="" class="logoDois">
+        </div>
+        <div class="controleMenuIndex">
+            <button class="btIndex btIniciar" id="btIniciar">INICIAR</button>
+            <audio src="assets/audios/botao.mp3" id="audioBotao"></audio>
+            
+            <button class="btIndex" id="btAudioOn">
+                <i class="fa-solid fa-volume-high" ></i>
+            </button>
+            <button class="btIndex btOff" id="btAudioOff">
+                <i class="fa-solid fa-volume-xmark"></i>
+            </button>
+
+            <audio id='audioBatalha' src="assets/audios/batalha.mp3"></audio>
+        </div>
+    </section>
 </body>
+<script src="assets/js/botaoAudio.js"></script>
+<script src="assets/js/botaoIniciar.js"></script>
+<script src="https://kit.fontawesome.com/9662d1bb26.js" crossorigin="anonymous"></script>
 
 </html>

@@ -19,8 +19,7 @@ function convertElementsPoke(pokemon){
 }
 
 function addPoke(offset, limit){
-    
-    
+
     pokeApi.getpokemons(offset, limit).then((pokemons=[])=>{
         card.innerHTML+=pokemons.map(convertElementsPoke).join("")})
 

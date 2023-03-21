@@ -1,0 +1,33 @@
+.animacao{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.pokebolaInicial{
+    position: absolute;
+    left: 60%;
+    width: 35%;
+    bottom: 0;
+    transform: rotate(345deg);
+    animation: pokebolaRolando 5s;
+    
+}
+
+@keyframes pokebolaRolando{
+    0% {
+        left: -40%;
+        transform: rotate(0deg);
+        filter: brightness(50%);
+    }
+  
+    95%{
+      left: 61%;
+      transform: rotate(348deg)
+    }
+    100%{
+        left: 60%;
+        transform: rotate(345deg);
+        filter: brightness(100%);
+      }
+  }

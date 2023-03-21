@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(197, 197, 197);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid red 1px;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.principal{
+    height: 80%;
+}
+.imagemLogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logoUm{
+    width: 55%;
+    filter: brightness(90%);
+}
+.logoDois{
+    margin-top: -2rem;
+    width: 35%;
+    filter: brightness(100%);
+}
+.controleMenuIndex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btIniciar{
+    margin: 1rem;
+}
+.btIndex{
+    border-radius: 2rem;
+    border: none;
+    background-color: #536bc4;
+    padding: .5rem;
+    cursor: pointer;
+    color: white;
+}
+.btIndex:hover{
+    background-color: #42559b;
+}
+.btIndex:active{
+    background-color: #1d3897;
+    color: grey;
+}
+
+.btOff{
+    display: none;
+}
