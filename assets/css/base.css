@@ -1,7 +1,3 @@
-.base-layout{
-    display: grid;
-    
-}
 
 /*layout tablet*/
 @media screen and (min-width: 425px) {

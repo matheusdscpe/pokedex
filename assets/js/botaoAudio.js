@@ -4,29 +4,17 @@ const btAudioOn = document.querySelector("#btAudioOn");
 const btAudioOff = document.querySelector("#btAudioOff");
 
 
-function mudo() {
-
-    let estadoBt = 1;
-    if(estadoBt == 1){
+function play() {
         audioBatalha.play();
         btAudioOn.classList.toggle("btOff");
-        btAudioOff.classList.toggle("btOff");
-        estadoBt++;
-    }else if(estadoBt == 2){
-        audioBatalha.muted();
+        btAudioOff.classList.toggle("btOff"); 
+}
+function mudo(){
+    audioBatalha.pause();
         btAudioOn.classList.toggle("btOff");
         btAudioOff.classList.toggle("btOff");
-        estadoBt++;
-    }else{
-        estadoBt = 1;
-    }
-
 }
 
 
-btAudioOn.addEventListener('click', mudo);
+btAudioOn.addEventListener('click', play);
 btAudioOff.addEventListener('click', mudo);
-
-
-// audioBatalha.play();
-//         btAudio.classList.toggle(fa-volume-high,fa-volume-xmark)

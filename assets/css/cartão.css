@@ -1,4 +1,5 @@
 .cartao-poke{
+    box-sizing: border-box;
     width: 100%;
     border-radius: 2rem;
     display: grid;

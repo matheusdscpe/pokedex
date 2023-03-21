@@ -1,6 +1,6 @@
 const card = document.querySelector('#baseLayout')
 const btnAddPoke = document.querySelector('#addPoke')
-const limit = 5;
+const limit = 1;
 let offset = 0;
 
 function convertElementsPoke(pokemon){
