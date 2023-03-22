@@ -1,0 +1,23 @@
+/*layout tablet*/
+@media screen and (max-width: 425px) {
+    .baseCartoes{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        width: 75%;
+        height: 75%;
+        border-radius: 2rem;
+    }
+}
+
+/*layout tablet xl*/
+@media screen and (min-width: 700px) {
+
+    
+}
+
+/*layout desktop*/
+@media screen and (min-width: 1024px) {
+
+    
+}

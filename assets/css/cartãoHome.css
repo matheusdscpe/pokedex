@@ -40,13 +40,7 @@
     padding: .5rem;    
 }
 
-
-/*layout tablet*/
-@media screen and (min-width: 425px) {
-
-   .cartao-poke{
+.cartao-poke{
     width: 90%;
     margin: .5rem auto;
-   }
-
 }

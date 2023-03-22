@@ -1,8 +1,8 @@
 
 /*      GERAL      */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,700;1,300&display=swap');
-@import url(./cores.css);
-@import url(./reset.css);
+@import url(cores.css);
+@import url(reset.css);
 
 
 
@@ -11,9 +11,11 @@
 @import url(pokebola.css);
 
 
-/* @import url(./base.css); */
 
 
 /*      HOME      */
 @import url(home.css);
 @import url(cartãoHome.css);
+
+
+@import url(ajusteDispositivos.css);

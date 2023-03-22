@@ -2,8 +2,14 @@ const card = document.querySelector('#baseLayout')
 const btNextPg = document.querySelector('#nextPg')
 const btnBackPg = document.querySelector('#backPg')
 const btnRelodPg = document.querySelector('#relodPg')
-const limit = 8;
+
+
+import { largura, verificaLimit } from "./dispositivos.js";
+// const limit = 8;
+let limit = verificaLimit(largura);
 let offset = 0;
+
+
 
 function convertElementsPoke(pokemon) {
     return `
