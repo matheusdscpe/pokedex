@@ -22,10 +22,6 @@
     background-color: rgb(238, 236, 234);
 }
 
-
-
-
-
 .addPoke{
     border: solid rgba(107, 107, 107, 0.671) .5px;
     color: rgba(107, 107, 107, 0.671);
@@ -43,4 +39,8 @@
 }
 .addPoke:active{
     background-color: rgba(107, 107, 107, 0.904);;
+}
+
+.navPg{
+    display: flex;
 }
