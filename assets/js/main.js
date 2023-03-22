@@ -20,17 +20,7 @@ function convertElementsPoke(pokemon) {
     `
 }
 
-function addPoke(offset, limit) {
-    pokeApi.getpokemons(offset, limit).then((pokemons = []) => {
-        card.innerHTML += pokemons.map(convertElementsPoke).join("")
-    })
-}
 nextPage(offset, limit)
-
-
-
-
-
 
 function nextPage(offset, limit) {
     pokeApi.getpokemons(offset, limit).then((pokemons = []) => {
@@ -53,16 +43,17 @@ function reloadPage() {
 
 
 
-
-
-
 btNextPg.addEventListener('click', () => {
     offset += limit;
     nextPage(offset, limit);
 });
 
 btnBackPg.addEventListener('click', () => {
-    offset -= limit;
+    if(offset<=0){
+        offset = 0
+    }else{
+        offset -= limit;
+    }
     backPage(offset, limit);
 });
 
