@@ -8,7 +8,7 @@ export function verificaLimit(largura) {
         return 2;
     }else if(largura >= 425 && largura <= 700){
         return 4;
-    }else if(largura <= 1024){
+    }else if(largura >= 700 || largura >1024){
         return 8;
     }
 

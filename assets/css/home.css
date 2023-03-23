@@ -8,7 +8,6 @@
 }
 .titulo-poke{
     box-sizing: border-box;
-
     width: 25%;
 }
 
@@ -44,3 +43,4 @@
 .navPg{
     display: flex;
 }
+

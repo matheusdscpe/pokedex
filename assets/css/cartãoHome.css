@@ -1,17 +1,18 @@
 .cartao-poke{
     box-sizing: border-box;
-    width: 100%;
     border-radius: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: .5rem;
+    width: 90%;
+    margin: .5rem auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 .num-poke{
     text-align: right;
     grid-column-end: span 2;
     font-size: .700rem;
     padding: .700rem 1rem 0 0;
-    color: rgba(247, 247, 247, 0.664);
+    color: rgb(247, 247, 247);
 }
 .nome-poke{
     text-transform: capitalize;
@@ -36,11 +37,9 @@
 }
 
 .img-poke{    
-    width: 100%;
-    padding: .5rem;    
+    padding: .5rem;   
 }
-
-.cartao-poke{
-    width: 90%;
-    margin: .5rem auto;
+.corpo-card{
+    display: flex;
+    justify-content: space-between;
 }

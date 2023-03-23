@@ -1,12 +1,22 @@
 /*layout tablet*/
 @media screen and (max-width: 425px) {
+    .titulo-poke{
+        width: 50%;
+    }
     .baseCartoes{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        width: 75%;
-        height: 75%;
-        border-radius: 2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 50%;
+        width: 80%;
+        height: 80%;
+    }
+    .nome-poke{
+        font-size: 1.5rem;
+    }
+    .tipo{
+        font-size: .5rem;
+    }
+    .img-poke{
+        transform: scale(1.2);
     }
 }
 
